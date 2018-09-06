@@ -22,9 +22,6 @@ Projeto para a disciplina PIN22107 do curso de Graduação em Engenharia Eletrô
 Para uma melhor organização e visualização das etapas necessárias, foi construído o seguinte fluxograma:
 ![alt text](./img/fluxograma.png "Fluxograma")
 
-## Cronograma de atividades
-![alt text](./img/cronograma.png "Cronograma")
-
 ## Autores
 - João Bassani
 - Ricardo Cirio
