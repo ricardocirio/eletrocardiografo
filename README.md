@@ -1,6 +1,6 @@
 # Eletrocardiógrafo
-======
-<span style="color:red">**ATENÇÃO: Em desenvolvimento.**</span>
+
+**ATENÇÃO: Em desenvolvimento.**
 
 Projeto para a disciplina PIN22107 do curso de Graduação em Engenharia Eletrônica do Instituto Federal de Santa Catarina. Consiste no projeto e execução de um eletrocardiógrafo de baixo consumo energético capaz de adquirir um sinal de eletrocardiograma por meio de 3 eletrodos e enviar suas medições para um aplicativo de aparelho celular.
 
