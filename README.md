@@ -30,31 +30,31 @@ Os filtros passa-baixas, passa-altas e rejeita-faixa foram projetados na estrutu
 
 ### Passa-altas
 
-->![alt text](./images/calculo_passa_altas.png "Cálculo do filtro passa-altas")<-
+![alt text](./images/calculo_passa_altas.png "Cálculo do filtro passa-altas")
 
-->![alt text](./images/esquematico_passa_altas.png "Esquemático do filtro passa-altas")<-
+![alt text](./images/esquematico_passa_altas.png "Esquemático do filtro passa-altas")
 
-->![alt text](./images/grafico_passa_altas.png "Gráfico de simulação do filtro passa-altas")<-
+![alt text](./images/grafico_passa_altas.png "Gráfico de simulação do filtro passa-altas")
 
 ### Passa-baixas
 
-->![alt text](./images/calculo_passa_baixas.png "Cálculo do filtro passa-baixas")<-
+![alt text](./images/calculo_passa_baixas.png "Cálculo do filtro passa-baixas")
 
 No intuito de otimizar a eficiência energética do eletrocardiógrafo, foi analisada a possibilidade de implementar um filtro passa-baixas passivo, portanto foi realizada uma comparação entre o filtro projetado de 2ª ordem com um filtro passivo na simulação.
 
-->![alt text](./images/esquematico_passa_baixas.png "Esquemático do filtro passa-baixas")<-
+![alt text](./images/esquematico_passa_baixas.png "Esquemático do filtro passa-baixas")
 
-->![alt text](./images/grafico_passa_baixas.png "Gráfico de simulação do filtro passa-baixas")<-
+![alt text](./images/grafico_passa_baixas.png "Gráfico de simulação do filtro passa-baixas")
 
 ### Rejeita-faixa
 
 Inicialmente, projetou-se o filtro notch ativo para rejeitar ruídos oriundos da rede elétrica de 60 Hz.
 
-->![alt text](./images/calculo_rejeita_faixa.png "Cálculo do filtro rejeita-faixa")<-
+![alt text](./images/calculo_rejeita_faixa.png "Cálculo do filtro rejeita-faixa")
 
-->![alt text](./images/esquematico_rejeita_faixa.png "Esquemático do filtro rejeita-faixa")<-
+![alt text](./images/esquematico_rejeita_faixa.png "Esquemático do filtro rejeita-faixa")
 
-->![alt text](./images/grafico_rejeita_faixa.png "Gráfico de simulação do filtro rejeita-faixa")<-
+![alt text](./images/grafico_rejeita_faixa.png "Gráfico de simulação do filtro rejeita-faixa")
 
 Entretanto, devido à sensibilidade deste filtro aos valores dos componentes utilizados, e a necessidade de um elevado fator de qualidade, concluiu-se que implementá-lo digitalmente seria uma alternativa mais apropriada.
 
