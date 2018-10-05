@@ -1,14 +1,77 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Amplifier_Instrumentation:AD620
+# Device:C
 #
-DEF Amplifier_Instrumentation:AD620 U 0 5 Y Y 1 F N
-F0 "U" 150 300 50 H V C CNN
-F1 "Amplifier_Instrumentation:AD620" 200 200 50 H V C CNN
+DEF Device:C C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "Device:C" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device:R
+#
+DEF Device:R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device:R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# placa_aquisicao_e_filtros-rescue:+9V-power
+#
+DEF placa_aquisicao_e_filtros-rescue:+9V-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "placa_aquisicao_e_filtros-rescue:+9V-power" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-ALIAS AD623
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +9V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# placa_aquisicao_e_filtros-rescue:-9V-power
+#
+DEF placa_aquisicao_e_filtros-rescue:-9V-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -125 50 H I C CNN
+F1 "placa_aquisicao_e_filtros-rescue:-9V-power" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 0 0 0 100 N
+P 4 0 1 0 30 50 -30 50 0 100 30 50 F
+X -9V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# placa_aquisicao_e_filtros-rescue:AD620-Amplifier_Instrumentation
+#
+DEF placa_aquisicao_e_filtros-rescue:AD620-Amplifier_Instrumentation U 0 5 Y Y 1 F N
+F0 "U" 150 300 50 H V C CNN
+F1 "placa_aquisicao_e_filtros-rescue:AD620-Amplifier_Instrumentation" 200 200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
 $FPLIST
  SOIC*P1.27mm*
  DIP*W7.62mm*
@@ -26,11 +89,29 @@ X Rg 8 -400 -100 100 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic:Conn_01x02
+# placa_aquisicao_e_filtros-rescue:C-Device
 #
-DEF Connector_Generic:Conn_01x02 J 0 40 Y N 1 F N
+DEF placa_aquisicao_e_filtros-rescue:C-Device C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "placa_aquisicao_e_filtros-rescue:C-Device" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# placa_aquisicao_e_filtros-rescue:Conn_01x02-Connector_Generic
+#
+DEF placa_aquisicao_e_filtros-rescue:Conn_01x02-Connector_Generic J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Generic:Conn_01x02" 0 -200 50 H V C CNN
+F1 "placa_aquisicao_e_filtros-rescue:Conn_01x02-Connector_Generic" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -45,11 +126,11 @@ X Pin_2 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic:Conn_01x04
+# placa_aquisicao_e_filtros-rescue:Conn_01x04-Connector_Generic
 #
-DEF Connector_Generic:Conn_01x04 J 0 40 Y N 1 F N
+DEF placa_aquisicao_e_filtros-rescue:Conn_01x04-Connector_Generic J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "Connector_Generic:Conn_01x04" 0 -300 50 H V C CNN
+F1 "placa_aquisicao_e_filtros-rescue:Conn_01x04-Connector_Generic" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -68,11 +149,11 @@ X Pin_4 4 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic:Conn_02x04_Counter_Clockwise
+# placa_aquisicao_e_filtros-rescue:Conn_02x04_Counter_Clockwise-Connector_Generic
 #
-DEF Connector_Generic:Conn_02x04_Counter_Clockwise J 0 40 Y N 1 F N
+DEF placa_aquisicao_e_filtros-rescue:Conn_02x04_Counter_Clockwise-Connector_Generic J 0 40 Y N 1 F N
 F0 "J" 50 200 50 H V C CNN
-F1 "Connector_Generic:Conn_02x04_Counter_Clockwise" 50 -300 50 H V C CNN
+F1 "placa_aquisicao_e_filtros-rescue:Conn_02x04_Counter_Clockwise-Connector_Generic" 50 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -99,29 +180,24 @@ X Pin_8 8 300 100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:C
+# placa_aquisicao_e_filtros-rescue:GNDA-power
 #
-DEF Device:C C 0 10 N Y 1 F N
-F0 "C" 25 100 50 H V L CNN
-F1 "Device:C" 25 -100 50 H V L CNN
-F2 "" 38 -150 50 H I C CNN
+DEF placa_aquisicao_e_filtros-rescue:GNDA-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "placa_aquisicao_e_filtros-rescue:GNDA-power" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-$FPLIST
- C_*
-$ENDFPLIST
 DRAW
-P 2 0 1 20 -80 -30 80 -30 N
-P 2 0 1 20 -80 30 80 30 N
-X ~ 1 0 150 110 D 50 50 1 1 P
-X ~ 2 0 -150 110 U 50 50 1 1 P
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GNDA 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# Device:Opamp_Quad_Generic
+# placa_aquisicao_e_filtros-rescue:Opamp_Quad_Generic-Device
 #
-DEF Device:Opamp_Quad_Generic U 0 20 Y Y 5 F N
+DEF placa_aquisicao_e_filtros-rescue:Opamp_Quad_Generic-Device U 0 20 Y Y 5 F N
 F0 "U" 0 200 50 H V L CNN
-F1 "Device:Opamp_Quad_Generic" 0 -200 50 H V L CNN
+F1 "placa_aquisicao_e_filtros-rescue:Opamp_Quad_Generic-Device" 0 -200 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -152,11 +228,11 @@ X V+ 4 -100 300 150 D 50 50 5 1 W
 ENDDRAW
 ENDDEF
 #
-# Device:R
+# placa_aquisicao_e_filtros-rescue:R-Device
 #
-DEF Device:R R 0 0 N Y 1 F N
+DEF placa_aquisicao_e_filtros-rescue:R-Device R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Device:R" 0 0 50 V V C CNN
+F1 "placa_aquisicao_e_filtros-rescue:R-Device" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -169,11 +245,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:R_POT
+# placa_aquisicao_e_filtros-rescue:R_POT-Device
 #
-DEF Device:R_POT RV 0 40 Y N 1 F N
+DEF placa_aquisicao_e_filtros-rescue:R_POT-Device RV 0 40 Y N 1 F N
 F0 "RV" -175 0 50 V V C CNN
-F1 "Device:R_POT" -100 0 50 V V C CNN
+F1 "placa_aquisicao_e_filtros-rescue:R_POT-Device" -100 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -201,20 +277,6 @@ P 2 0 1 0 -30 50 0 100 N
 P 2 0 1 0 0 0 0 100 N
 P 2 0 1 0 0 100 30 50 N
 X +9V 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power:-9V
-#
-DEF power:-9V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -125 50 H I C CNN
-F1 "power:-9V" 0 150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 0 0 0 100 N
-P 4 0 1 0 30 50 -30 50 0 100 30 50 F
-X -9V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #

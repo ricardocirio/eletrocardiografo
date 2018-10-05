@@ -26,9 +26,10 @@ Para uma melhor organização e visualização das etapas necessárias, foi cons
 
 
 ## Filtros
-Os filtros passa-baixas, passa-altas e rejeita-faixa foram projetados na estrutura _voltage-controlled voltage source_ (VCVS) utilizando a aproximação Butterworth de segunda ordem e equacionamento conforme o livro "Amplificadores Operacionais e Filtros Ativos". As simulações foram realizadas no _software_ LTspice XVII, e o modelo do amplificador operacional TLC2254 utilizado é o fornecido pela Texas Instruments. Foi definido inicialmente ganho unitário para todos os filtros.
+Os filtros passa-baixas, passa-altas e rejeita-faixa foram projetados conforme o equacionamento descrito pelo livro "Amplificadores Operacionais e Filtros Ativos". As simulações foram realizadas no _software_ LTspice XVII, e o modelo do amplificador operacional TLC2254 utilizado é o fornecido pela Texas Instruments. Foi definido inicialmente ganho unitário para todos os filtros.
 
 ### Passa-altas
+Projetou-se o filtro passa-altas com ganho unitário na estrutura _multiple feedback_ (MFB), que possibilita um ajuste de offset.
 
 ![alt text](./images/calculo_passa_altas.png "Cálculo do filtro passa-altas")
 
