@@ -23,7 +23,7 @@ Para uma melhor organização e visualização das etapas necessárias, foi cons
 ## Aquisição do sinal
 
 <p align="center">
-![alt text](./images/esquematico_aquisicao.png "Esquemático AD620")
+<img src="./images/esquematico_aquisicao.png" alt="Esquemático AD620">
 </p>
 
 ## Filtros
@@ -35,9 +35,10 @@ Projetou-se o filtro passa-altas com ganho unitário na estrutura _voltage-contr
 <img src="./images/calculo_passa_altas.png" alt="Cálculo do filtro passa-altas" height="350">
 
 <p align="center">
-![alt text](./images/esquematico_passa_altas.png "Esquemático do filtro passa-altas")
+<img src="./images/esquematico_passa_altas.png" alt="Esquemático do filtro passa-altas">
 
-![alt text](./images/grafico_passa_altas.png "Gráfico de simulação do filtro passa-altas")</p>
+<img src="./images/grafico_passa_altas.png" alt="Gráfico de simulação do filtro passa-altas">
+</p>
 
 ### Passa-baixas
 
@@ -46,9 +47,10 @@ Projetou-se o filtro passa-altas com ganho unitário na estrutura _voltage-contr
 No intuito de otimizar a eficiência energética do eletrocardiógrafo, foi analisada a possibilidade de implementar um filtro passa-baixas passivo, portanto foi realizada uma comparação entre o filtro projetado de 2ª ordem com um filtro passivo na simulação.
 
 <p align="center">
-![alt text](./images/esquematico_passa_baixas.png "Esquemático do filtro passa-baixas")
+<img src="./images/esquematico_passa_baixas.png" alt="Esquemático do filtro passa-baixas">
 
-![alt text](./images/grafico_passa_baixas.png "Gráfico de simulação do filtro passa-baixas")</p>
+<img src="./images/grafico_passa_baixas.png" alt="Gráfico de simulação do filtro passa-baixas">
+</p>
 
 ### Rejeita-faixa
 
@@ -57,21 +59,24 @@ Inicialmente, projetou-se o filtro notch ativo para rejeitar ruídos oriundos da
 <img src="./images/calculo_rejeita_faixa.png" alt="Cálculo do rejeita-faixa" height="350">
 
 <p align="center">
-![alt text](./images/esquematico_rejeita_faixa.png "Esquemático do filtro rejeita-faixa")
+<img src="./images/esquematico_rejeita_faixa.png" alt="Esquemático do filtro rejeita-faixa">
 
-![alt text](./images/grafico_rejeita_faixa.png "Gráfico de simulação do filtro rejeita-faixa")</p>
+<img src="./images/grafico_rejeita_faixa.png" alt="Gráfico de simulação do filtro rejeita-faixa">
+</p>
 
 Entretanto, devido à sensibilidade deste filtro aos valores dos componentes utilizados, e a necessidade de um elevado fator de qualidade, concluiu-se que implementá-lo digitalmente seria uma alternativa mais apropriada.
 
 ## Automatic Gain Control (AGC)
 
 <p align="center">
-![alt text](./images/esquematico_agc.png "Esquemático do AGC")</p>
+<img src="./images/esquematico_agc.png" alt="Esquemático do AGC">
+</p>
 
 ## Somador
 
 <p align="center">
-![alt text](./images/esquematico_somador.png "Esquemático do somador")</p>
+<img src="./images/esquematico_somador.png" alt="Esquemático do somador">
+</p>
 
 ## Autores
 * João Bassani
