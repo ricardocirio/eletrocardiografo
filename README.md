@@ -18,8 +18,7 @@ Projeto para a disciplina PIN22107 do curso de Graduação em Engenharia Eletrô
 
 ## Fluxograma
 Para uma melhor organização e visualização das etapas necessárias, foi construído o seguinte fluxograma:
-![alt text](./images/fluxograma.png "Fluxograma")
-<img src="./images/fluxograma.png" alt="Fluxograma" height="400">
+<center><img src="./images/fluxograma.png" alt="Fluxograma" height="400"></center>
 
 ## Aquisição do sinal
 
