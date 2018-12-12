@@ -19,16 +19,17 @@ Projeto para a disciplina PIN22107 do curso de Graduação em Engenharia Eletrô
 ## Fluxograma
 Para uma melhor organização e visualização das etapas necessárias, foi construído o seguinte fluxograma:
 ![alt text](./images/fluxograma.png "Fluxograma")
+<img src="./images/fluxograma.png" alt="Fluxograma" height="400">
 
 ## Aquisição do sinal
 
 ![alt text](./images/esquematico_aquisicao.png "Esquemático AD620")
 
 ## Filtros
-Os filtros passa-baixas, passa-altas e rejeita-faixa foram projetados conforme o equacionamento descrito pelo livro "Amplificadores Operacionais e Filtros Ativos". As simulações foram realizadas no _software_ LTspice XVII, e o modelo do amplificador operacional TLC2254 utilizado é o fornecido pela Texas Instruments. Foi definido inicialmente ganho unitário para todos os filtros.
+Os filtros passa-baixas, passa-altas e rejeita-faixa foram projetados conforme o equacionamento descrito pelo livro "Amplificadores Operacionais e Filtros Ativos". As simulações foram realizadas no _software_ LTspice XVII. Foi definido inicialmente ganho unitário para todos os filtros.
 
 ### Passa-altas
-Projetou-se o filtro passa-altas com ganho unitário na estrutura _multiple feedback_ (MFB), que possibilita um ajuste de offset.
+Projetou-se o filtro passa-altas com ganho unitário na estrutura _voltage-controlled voltage source_ (VCVS).
 
 <img src="./images/calculo_passa_altas.png" alt="Cálculo do filtro passa-altas" width="755" height="459">
 ![alt text](./images/calculo_passa_altas.png "Cálculo do filtro passa-altas")
