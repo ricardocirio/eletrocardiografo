@@ -56,7 +56,7 @@ No intuito de otimizar a eficiência energética do eletrocardiógrafo, foi anal
 
 Inicialmente, projetou-se o filtro notch ativo para rejeitar ruídos oriundos da rede elétrica de 60 Hz.
 
-<img src="./images/calculo_rejeita_faixa.png" alt="Cálculo do rejeita-faixa" height="350">
+<img src="./images/calculo_rejeita_faixa.png" alt="Cálculo do rejeita-faixa" height="200">
 
 <p align="center">
 <img src="./images/esquematico_rejeita_faixa.png" alt="Esquemático do filtro rejeita-faixa">
@@ -77,6 +77,26 @@ Entretanto, devido à sensibilidade deste filtro aos valores dos componentes uti
 <p align="center">
 <img src="./images/esquematico_somador.png" alt="Esquemático do somador">
 </p>
+
+## Hardware
+
+* Protótipo inicial (erros e acertos)
+Em um primeiro momento, optou-se pela confecção de um protótipo contendo apenas os estágios de aquisição e filtragem do sinal. Já na intenção de condicionar o sinal para uma conversão AD, por meio de um microcontrolador, existiu a necessidade de um ajuste de _offset_, tornando o sinal completamente positivo. A alternativa aparentemente mais prática e econômica foi de inserir esse acréscimo no valor de tensão já no próprio filtro passa-altas. Ao contrário do esperado, o _offset_ não se comportou corretamente, pois mesmo com ganho unitário nos filtros, o sinal de saída apresentou grande instabilidade.
+Falar da parte da aquisição que funcionou corretamente, mas com o problema do ajuste de ganho.
+Mostrar esquemático, layout, fotos, prints.
+
+* Placa final
+Levando em conta os problemas encontrados inicialmente, a solução adotada com relação ao _offset_ foi de aplicá-lo em um estágio próprio ao final do circuito, consistindo de um circuito somador não-inversor.
+Mostrar esquemático, layout, fotos, prints.
+
+## Software
+
+## Resultados
+
+## Consumo energético
+
+## Sugestões para trabalhos futuros
+
 
 ## Autores
 * João Bassani
