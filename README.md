@@ -56,7 +56,7 @@ No intuito de otimizar a eficiência energética do eletrocardiógrafo, foi anal
 
 Inicialmente, projetou-se o filtro notch ativo para rejeitar ruídos oriundos da rede elétrica de 60 Hz.
 
-<img src="./images/calculo_rejeita_faixa.png" alt="Cálculo do rejeita-faixa" height="300">
+<img src="./images/calculo_rejeita_faixa.png" alt="Cálculo do rejeita-faixa" height="250">
 
 <p align="center">
 <img src="./images/esquematico_rejeita_faixa.png" alt="Esquemático do filtro rejeita-faixa">
