@@ -1,7 +1,5 @@
 # Eletrocardiógrafo
 
-**ATENÇÃO: Em desenvolvimento.**
-
 Projeto para a disciplina PIN22107 do curso de Graduação em Engenharia Eletrônica do Instituto Federal de Santa Catarina. Consiste no projeto e execução de um eletrocardiógrafo de baixo consumo energético capaz de adquirir um sinal de eletrocardiograma por meio de 3 eletrodos e enviar suas medições para um aplicativo de aparelho celular.
 
 ## Especificações de projeto
@@ -24,6 +22,7 @@ Para uma melhor organização e visualização das etapas necessárias, foi cons
 
 ## Aquisição do sinal
 
+![alt text](./images/esquematico_aquisicao.png "Esquemático AD620")
 
 ## Filtros
 Os filtros passa-baixas, passa-altas e rejeita-faixa foram projetados conforme o equacionamento descrito pelo livro "Amplificadores Operacionais e Filtros Ativos". As simulações foram realizadas no _software_ LTspice XVII, e o modelo do amplificador operacional TLC2254 utilizado é o fornecido pela Texas Instruments. Foi definido inicialmente ganho unitário para todos os filtros.
@@ -31,7 +30,9 @@ Os filtros passa-baixas, passa-altas e rejeita-faixa foram projetados conforme o
 ### Passa-altas
 Projetou-se o filtro passa-altas com ganho unitário na estrutura _multiple feedback_ (MFB), que possibilita um ajuste de offset.
 
+<img src="./images/calculo_passa_altas.png" alt="Cálculo do filtro passa-altas" width="755" height="459">
 ![alt text](./images/calculo_passa_altas.png "Cálculo do filtro passa-altas")
+
 
 ![alt text](./images/esquematico_passa_altas.png "Esquemático do filtro passa-altas")
 
@@ -58,6 +59,14 @@ Inicialmente, projetou-se o filtro notch ativo para rejeitar ruídos oriundos da
 ![alt text](./images/grafico_rejeita_faixa.png "Gráfico de simulação do filtro rejeita-faixa")
 
 Entretanto, devido à sensibilidade deste filtro aos valores dos componentes utilizados, e a necessidade de um elevado fator de qualidade, concluiu-se que implementá-lo digitalmente seria uma alternativa mais apropriada.
+
+## Automatic Gain Control (AGC)
+
+![alt text](./images/esquematico_agc.png "Esquemático do AGC")
+
+## Somador
+
+![alt text](./images/esquematico_somador.png "Esquemático do somador")
 
 ## Autores
 * João Bassani
