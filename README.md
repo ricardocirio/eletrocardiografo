@@ -137,7 +137,7 @@ Para ilustrar, a seguir, é possível ver o esquemático que descreve o circuito
 Percebe-se que o circuito é energizado por uma alimentação simétrica de 9V, proveniente de duas baterias. Ainda, abaixo é possível ver o layout da placa de circuito impresso resultante:
 
 <p align="center">
-<img src="./images/layout_prototipo_inicial.png" alt="Layout de placa do protótipo inicial">
+<img src="./images/layout_prototipo_inicial.png" alt="Layout de placa do protótipo inicial" height="450">
 </p>
 
 * **Placa final**
