@@ -203,7 +203,7 @@ Com a praticidade do osciloscópio, independente da rede de energia, foi possív
 Em relação ao sinal visualizado por meio do aplicativo, empregando uma conexão Bluetooth, pode ser vista a seguir uma captura da tela do smartphone utilizado:
 
 <p align="center">
-<img src="./images/captura_de_tela_transmissao_bluetooth.JPG" alt="Imagem do aplicativo com o sinal recebido via conexão Bluetooth" height="546">
+<img src="./images/captura_tela_transmissao_bluetooth.JPG" alt="Imagem do aplicativo com o sinal recebido via conexão Bluetooth" height="546">
 </p>
 
 O sinal verificado no aplicativo não apresenta as componentes de frequência da ordem dos MHz, isso por conta da própria taxa de amostragem do sinal e da transmissão do Bluetooth, que acabam por “alisar” a curva.
