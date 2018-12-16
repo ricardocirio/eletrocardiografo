@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 4)
+    (drawings 8)
     (tracks 180)
     (zones 0)
     (modules 23)
@@ -1123,9 +1123,13 @@
     )
   )
 
-  (gr_line (start 166.37 128.524) (end 130.81 128.524) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 166.37 58.674) (end 166.37 128.524) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 130.81 58.674) (end 166.37 58.674) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 130.81 128.524) (end 166.37 128.524) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 130.81 58.674) (end 130.81 128.524) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 166.37 58.674) (end 130.81 58.674) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 166.37 128.524) (end 166.37 58.674) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 166.37 128.524) (end 130.81 128.524) (layer Margin) (width 0.15))
+  (gr_line (start 166.37 58.674) (end 166.37 128.524) (layer Margin) (width 0.15))
+  (gr_line (start 130.81 58.674) (end 166.37 58.674) (layer Margin) (width 0.15))
   (gr_line (start 130.81 128.27) (end 130.81 58.674) (layer Margin) (width 0.15))
 
   (via (at 163.322 112.014) (size 1.6) (drill 0.8) (layers F.Cu B.Cu) (net 1))
@@ -1166,7 +1170,7 @@
   (segment (start 152.4 85.09) (end 151.13 83.82) (width 0.762) (layer B.Cu) (net 1) (tstamp 5BB7AE51))
   (via (at 152.4 85.09) (size 1.6) (drill 0.8) (layers F.Cu B.Cu) (net 1))
   (segment (start 142.24 85.09) (end 142.24 85.09) (width 0.762) (layer B.Cu) (net 1) (tstamp 5BB7AE53))
-  (via (at 142.24 85.09) (size 1.6) (drill 0.8) (layers F.Cu B.Cu) (net 1) (status 1000000))
+  (via (at 142.24 85.09) (size 1.6) (drill 0.8) (layers F.Cu B.Cu) (net 1))
   (segment (start 160.528 98.298) (end 160.401 98.425) (width 0.762) (layer B.Cu) (net 2))
   (segment (start 160.528 95.504) (end 160.528 98.298) (width 0.762) (layer B.Cu) (net 2))
   (segment (start 160.401 104.394) (end 160.401 98.425) (width 0.762) (layer B.Cu) (net 2))
