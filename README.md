@@ -117,13 +117,13 @@ Outra parte importante no projeto do somador se deu pela adição de dois resist
 Em um primeiro momento, para validar os circuitos projetados até aquele momento, optou-se pela confecção de um protótipo contendo apenas os estágios de aquisição e filtragem do sinal. Já na intenção de condicioná-lo para uma conversão AD, por meio de um microcontrolador, existiu a necessidade de um ajuste de _offset_, tornando o sinal de saída completamente positivo. 
 
 <p align="center">
-<img src="./images/prototipo_inicial_vista_superior.png" alt="Prototipo inicial desenvolvido">
+<img src="./images/prototipo_inicial_vista_superior.jpg" alt="Prototipo inicial desenvolvido">
 </p>
 
 A alternativa aparentemente mais prática e econômica foi a de inserir esse acréscimo no valor de tensão já no próprio filtro passa-altas, considerando que a topologia de um filtro ativo MFB (_Multiple Feedback_) permite um deslocamento do nível de tensão apenas injetando a tensão desejada na entrada não-inversora do amplificador operacional envolvido no circuito. Ao contrário do esperado, o _offset_ não se comportou corretamente, pois mesmo com ganho unitário nos filtros seguintes, o sinal de saída apresentou grande instabilidade.
 
 <p align="center">
-<img src="./images/prototipo_inicial_vista_inferior.png" alt="Prototipo inicial desenvolvido">
+<img src="./images/prototipo_inicial_vista_inferior.jpg" alt="Prototipo inicial desenvolvido">
 </p>
 
 Além disso, o ajuste de ganho do sistema foi inserido por meio de um potenciômetro em série com o resistor de ganho do AD620. Observou-se, entretanto, que essa topologia deixa a desejar pelos valores de ganho muito elevados para esse estágio, já que nele o sinal ainda não foi filtrado e portanto componentes em frequências indesejadas também são amplificadas.
@@ -145,7 +145,7 @@ Percebe-se que o circuito é energizado por uma alimentação simétrica de 9V, 
 Levando em conta os problemas encontrados no protótipo inicial, a solução adotada com relação ao _offset_ foi de aplicá-lo em um estágio próprio, consistindo de um somador não-inversor, só no final do circuito, evitando que esse deslocamento de nível de tensão atrapalhasse o funcionamento das etapas anteriores, como os filtros e o próprio AGC.
 
 <p align="center">
-<img src="./images/placa_final_vista_superior.png" alt="Placa final confeccionada">
+<img src="./images/placa_final_vista_superior.jpg" alt="Placa final confeccionada">
 </p>
 
 Pensando no consumo energético e estabilidade do sistema, foi estabelecido que todos os circuitos seriam energizados com alimentação simétrica regulada de 3.3V. Por conseguinte, foi introduzida uma regulação da tensão de alimentação positiva utilizando o regulador linear _low-dropout_ LM1117. Em sequência, visando praticidade, projetou-se a obtenção da tensão de alimentação negativa através do inversor TPS60401. Isso flexibilizou o sistema com relação a sua tensão de entrada, podendo ser energizado por uma única bateria de valor de tensão entre 4.75 e 10V.
@@ -157,7 +157,7 @@ Por apresentar uma característica de amplificação com alta relação sinal-ru
 Com esse ganho estabelecido, a aquisição do sinal se deu de maneira eficiente, apresentando uma boa amplitude para o sinal de saída e uma satisfatória atenuação do ruído envolvido. Com a adição dos filtros, o sinal de saída alcançou as características desejadas para o circuito.
 
 <p align="center">
-<img src="./images/placa_final_vista_inferior.png" alt="Placa final confeccionada">
+<img src="./images/placa_final_vista_inferior.jpg" alt="Placa final confeccionada">
 </p>
 
 A partir da decisão de adicionar o estágio de controle de ganho, este proporcionou certas limitações em relação ao sinal condicionado pelos primeiros estágios: com um funcionamento adequado do AGC apenas para sinais de entrada com valores de tensão entre 50 e 500 mVpp, o ganho definido para o estágio de aquisição se tornou absurdo, já que o sinal fornecido ao estágio de controle automático de ganho já se encontrava fora dos limites determinados, deixando o sinal de saída instável e oscilando entre as saturações negativa e positiva do amplificador operacional, demonstrando um valor exagerado de amplificação.
@@ -203,7 +203,7 @@ Com a praticidade do osciloscópio, independente da rede de energia, foi possív
 Em relação ao sinal visualizado por meio do aplicativo, empregando uma conexão Bluetooth, pode ser vista a seguir uma captura da tela do smartphone utilizado:
 
 <p align="center">
-<img src="./images/captura_de_tela_transmissao_bluetooth.png" alt="Imagem do aplicativo com o sinal recebido via conexão Bluetooth">
+<img src="./images/captura_de_tela_transmissao_bluetooth.jpg" alt="Imagem do aplicativo com o sinal recebido via conexão Bluetooth">
 </p>
 
 O sinal verificado no aplicativo não apresenta as componentes de frequência da ordem dos MHz, isso por conta da própria taxa de amostragem do sinal e da transmissão do Bluetooth, que acabam por “alisar” a curva.
