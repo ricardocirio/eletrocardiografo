@@ -226,7 +226,7 @@ Considerando uma bateria de 9V comum, fornecendo uma quantidade de energia próx
 
 ## Autores
 * João Vitor Bassani
-* Ricardo Cirio
+* Ricardo Schons Cirio
 
 ## Bibliografia
 1. PERTENCE Jr., A. **Amplificadores Operacionais e Filtros Ativos**. 7.ed. Porto Alegre: Artmed, 2012.
